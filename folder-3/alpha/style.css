@@ -1,0 +1,78 @@
+/* 
+Theme Name:     Alapha
+Theme URI:  
+Author:         Mahfuz
+Author URI:     mahfuz.com
+Description:    It's our first hyper minimal theme
+Version:        1.0
+License:        GNU general public license v2 or latar
+License URI:    
+Tags:           Education, Blog
+Text Domain:    alpha
+
+*/
+.all-section {
+    overflow: hidden;
+}
+
+h1.heading {
+    font-family: "Arial Black";
+    width: 700px;
+    margin: auto;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3.tagline{
+    font-family: Arial;
+    margin:auto;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 700px;
+    text-align: center;
+}
+
+h2.post-title {
+    margin-bottom: 30px;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post p{
+    font-family: "Helvetica Neue";
+    line-height: 1.7em;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.post .row:nth-child(2) {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.post:last-child .row:nth-child(2){
+    border-bottom:none;
+}
+
+.footer{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #222;
+    color:#ccc;
+}
+
+.tags li{
+    color: #3D9970;
+}
+
+.page-header{
+    background-position: center;
+    background-size: cover;
+    margin-bottom:30px;
+    padding:170px 0px;
+}
