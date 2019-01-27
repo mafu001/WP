@@ -1,5 +1,11 @@
 <?php
 
+if(site_url() == "http://localhost/all/lwhh/") {
+    define("VERSION",  time());
+}else {
+    define("VERSION", wp_get_theme() -> get("Version"));
+}
+
 function alpha_bootstraping() {
     load_theme_textdomain("alpha");
     add_theme_support("title-tag");
@@ -27,7 +33,7 @@ add_action("after_setup_theme", "alpha_bootstraping");
 
 
 function alpha_assets() {
-    wp_enqueue_style("alpha", get_stylesheet_uri(), null, time());
+    wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
     wp_enqueue_style("bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
     wp_enqueue_style("feather-light", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css");
     
